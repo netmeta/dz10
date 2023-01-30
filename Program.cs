@@ -7,3 +7,18 @@ Console.WriteLine("Введите количество символов: "); // 
 int size = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine($"Исходный массив - [{string.Join(", ", array1)}]");
+Console.WriteLine($"Результат решения - [{string.Join(", ", GetArrayShortElement(array1, size))}]");
+
+
+string[] GetArrayShortElement(string[] array, int n)
+{
+    int newSize = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= n) newSize++;
+    }
+    string[] shortArray = new string[newSize];
+
+    }
+    return shortArray;
+}
