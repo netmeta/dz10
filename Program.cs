@@ -18,7 +18,19 @@ string[] GetArrayShortElement(string[] array, int n)
         if (array[i].Length <= n) newSize++;
     }
     string[] shortArray = new string[newSize];
+    if (newSize != 0)
+    {
+        int j = 0;
+        for (int i = 0; i < array.Length; i++)
+        {
+            if (array[i].Length <= n)
+            {
+                shortArray[j] = array[i];
+                j++;
+            }
 
+        }
+        return shortArray;
     }
     return shortArray;
 }
