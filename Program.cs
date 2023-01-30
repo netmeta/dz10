@@ -28,7 +28,6 @@ string[] GetArrayShortElement(string[] array, int n)
                 shortArray[j] = array[i];
                 j++;
             }
-
         }
         return shortArray;
     }
